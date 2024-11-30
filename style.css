@@ -159,11 +159,99 @@ header {
 }
 
 .clip::after {
-    content: 0;
+    content: '';
     position: absolute;
+    left: 24rem;
+    top: 8rem;
     width: 10rem;
     height: 1px;
     border-radius: 10px;
     background: #fff;
+    rotate: 150deg;
     z-index: 1;
+}
+
+.clip::before {
+    content: '';
+    position: absolute;
+    left: 33.37rem;
+    top: 5.5rem;
+    width: 25rem;
+    height: 1px;
+    border-radius: 10px;
+    background: #fff;
+    z-index: 1;
+}
+
+.name {
+    position: relative;
+    left: 34rem;
+    top: -22rem;
+    color: #fff;
+    display: grid;
+    gap: 10px;
+}
+
+.name h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.page-two {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-two .clip-two {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+}
+
+.clip-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clip-two::after {
+    content: '';
+    position: absolute;
+    left: 5rem;
+    top: 8rem;
+    width: 7rem;
+    height: 1px;
+    border-radius: 10px;
+    background: #fff;
+    rotate: 45deg;
+    z-index: 1;
+}
+
+.clip-two::before {
+    content: '';
+    position: absolute;
+    right: 41.5rem;
+    top: 5.5rem;
+    width: 26rem;
+    height: 1px;
+    border-radius: 10px;
+    background: #fff;
+    z-index: 1;
+}
+
+.name-two {
+    position: relative;
+    left: -20rem;
+    top: -21.8rem;
+    color: #fff;
+    display: grid;
+    gap: 10px;
+}
+
+.name-two h2 {
+    font-size: 3rem;
+    font-weight: 900;
 }
