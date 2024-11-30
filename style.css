@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper img {
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    z-index: 99;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.links a {
+    position: relative;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    left: 0;
+    bottom: -10px;
+    background: #fff;
+    transform: scale(0);
+    transition: .5s;
+    transform-origin: left;
+}
+
+.links a:hover::after {
+    transform: scale(1);
+}
+
+.btn button {
+    width: 140px;
+    height: 45px;
+    background: #ffff;
+    color: #000;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+.text h2 {
+    position: absolute;
+    font-size: 7rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px #f4f4f4, 0 0 20px #f4f4f4, 0 0 40px #f4f4f4, 0 0 80px #f4f4f4;
+    left: 15rem;
+    top: 16rem;
+    letter-spacing: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.next {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 1;
+}
+
+.next .details h3{
+    font-size: 1rem;
+    font-family: 100;
+    color: #fff;
+    text-align: center;
+}
+
+.details .center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 60%;
+    z-index: 1;
+}
+
+.center .info {
+    position: absolute;
+    top: 8rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    font-size: 4rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.details .center img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(20px);
+}
+
+.page-one {
+    width: 100%;
+    height: 50vh;
+}
+
+.page-one .clip {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+}
+
+.clip img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clip::after {
+    content: 0;
+    position: absolute;
+    width: 10rem;
+    height: 1px;
+    border-radius: 10px;
+    background: #fff;
+    z-index: 1;
+}
